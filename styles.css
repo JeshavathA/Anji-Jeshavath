@@ -107,11 +107,10 @@ a:hover{ opacity:0.92; }
 }
 .hero{
   display:grid;
-  grid-template-columns: 1.35fr 0.9fr;
+  grid-template-columns: 1.35fr 360px; /* 👈 FIXED narrow column */
   gap: 22px;
   align-items:start;
 }
-
 .tag{
   display:inline-flex;
   padding: 8px 12px;
