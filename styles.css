@@ -449,3 +449,15 @@ h1{
   .nav-links.open{ display:flex; }
   .nav{ position:relative; }
 }
+/* FORCE profile image size (final override) */
+.photo-card .profile-img{
+  max-height: 240px !important;  /* change 240 -> 220 if you want smaller */
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+/* Make the profile photo box smaller */
+.photo-card{
+  max-width: 360px !important;   /* reduce box width */
+  margin-left: auto;             /* align to right side neatly */
+}
