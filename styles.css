@@ -227,14 +227,14 @@ h1{
   overflow: visible;     /* CRITICAL */
 }
 .profile-img{
-  width: 100%;
-  height: auto;            /* let browser decide */
-  object-fit: contain;     /* NO CROPPING */
+  width: 90%;              /* 👈 reduce width */
+  max-height: 260px;
+  margin: 0 auto;          /* center horizontally */
+  object-fit: contain;
   object-position: center;
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,0.14);
   background: transparent;
-  padding: 0;              /* IMPORTANT */
   display: block;
 }
 .photo-fallback{
