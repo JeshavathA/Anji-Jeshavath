@@ -354,23 +354,22 @@ h1{
 }
 .carousel-track{
   display:flex;
-  gap: 20px;
+  gap: 12px;     /* smaller gap */
   align-items: center;
   width: max-content;
-  padding: 10px 0;
+  padding: 6px 0;
   animation: scroll 25s linear infinite;
 }
 .carousel img{
-  width: 360px;          /* readable */
-  height: auto;          /* NO forced height */
-  max-height: 240px;     /* optional cap */
-  object-fit: contain;   /* FULL certificate */
+  width: 160px;            /* smaller than passport photo width */
+  height: 110px;           /* small thumbnail */
+  object-fit: contain;     /* NO CROPPING */
   object-position: center;
-  background: transparent;
-  padding: 0;
-  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  padding: 6px;            /* keeps edges visible */
+  border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.14);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.30);
   display: block;
 }
 .carousel:hover .carousel-track{
