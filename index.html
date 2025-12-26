@@ -1,24 +1,29 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Anji Naik Jeshavath | Data Engineer / ETL Developer</title>
-  <meta name="description" content="Portfolio of Anji Naik Jeshavath — Data Engineer / ETL Developer. Cloud (Azure/AWS/GCP), ETL/ELT, Spark, Airflow, Snowflake." />
+  <meta name="description" content="Portfolio of Anji Naik Jeshavath — Data Engineer / ETL Developer (ETL/ELT, Spark, Airflow, Snowflake, Azure/AWS/GCP)." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <!-- STICKY HEADER -->
   <header class="header" id="top">
     <nav class="nav">
-      <a class="brand" href="#top">ANJ</a>
+      <a class="brand" href="#top" aria-label="Home">ANJ</a>
+
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+
       <div class="nav-links" id="navLinks">
         <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -26,81 +31,135 @@
         <a href="#contact" class="btn btn-small">Contact</a>
       </div>
     </nav>
+  </header>
 
-    <section class="hero">
+  <!-- HERO -->
+  <section class="hero-wrap">
+    <div class="container hero">
       <div class="hero-left">
-        <p class="tag">Data Engineer • ETL Developer • Cloud (Azure/AWS/GCP)</p>
-        <h1>Anji Naik Jeshavath</h1>
+        <p class="tag glow">Data Engineer • ETL Developer • Cloud (Azure/AWS/GCP)</p>
+
+        <h1 class="title-gradient">Anji Naik Jeshavath</h1>
+
         <p class="subtitle">
-          I build reliable data pipelines, modern data platforms, and scalable ETL/ELT workflows using
-          Spark, Airflow, Azure Data Factory, Snowflake, and cloud-native services.
+          ETL/ELT developer focused on building reliable data pipelines, modern cloud data platforms,
+          and production-ready orchestration with strong performance and data quality standards.
         </p>
 
         <div class="hero-actions">
-          <a class="btn" href="#contact">Hire / Contact</a>
+          <a class="btn btn-3d" href="#contact">Contact</a>
           <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">View Resume</a>
         </div>
 
-        <div class="meta">
+        <div class="meta card-3d">
           <div><span class="meta-label">Location:</span> Maryland, USA</div>
           <div><span class="meta-label">Email:</span> <a href="mailto:Anjijeshavath1@gmail.com">Anjijeshavath1@gmail.com</a></div>
           <div><span class="meta-label">Phone:</span> <a href="tel:+14437940141">+1 (443) 794-0141</a></div>
-          <!-- Optional: add your links -->
+
+          <!-- Paste your real links -->
           <div class="meta-links">
-            <a href="#" aria-label="LinkedIn (add your URL)">LinkedIn</a>
-            <a href="#" aria-label="GitHub (add your URL)">GitHub</a>
+            <a class="pill" href="PASTE_LINKEDIN_URL_HERE" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="pill" href="PASTE_GITHUB_URL_HERE" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
       </div>
 
       <div class="hero-right">
-        <!-- Put your photo in the repo as profile.jpg -->
-        <div class="photo-card">
-          <img src="profile.jpg" alt="Portrait of Anji Naik Jeshavath" onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='grid';" />
+        <!-- SMALLER PHOTO -->
+        <div class="photo-card card-3d">
+          <img class="profile-img" src="profile.jpg" alt="Portrait of Anji Naik Jeshavath"
+               onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='grid';" />
           <div class="photo-fallback" id="photoFallback" style="display:none;">
             <span>Upload</span>
             <strong>profile.jpg</strong>
-            <small>to show your photo here</small>
+            <small>to show your photo</small>
           </div>
         </div>
 
         <div class="stat-grid">
-          <div class="stat">
+          <div class="stat card-3d">
             <div class="stat-num">5+ yrs</div>
             <div class="stat-label">Data Engineering</div>
           </div>
-          <div class="stat">
-            <div class="stat-num">Azure • AWS • GCP</div>
-            <div class="stat-label">Cloud Platforms</div>
-          </div>
-          <div class="stat">
+          <div class="stat card-3d">
             <div class="stat-num">ETL/ELT</div>
             <div class="stat-label">Batch + Streaming</div>
           </div>
-          <div class="stat">
+          <div class="stat card-3d">
             <div class="stat-num">Spark • Airflow</div>
-            <div class="stat-label">Distributed Processing</div>
+            <div class="stat-label">Distributed Data</div>
+          </div>
+          <div class="stat card-3d">
+            <div class="stat-num">Azure • AWS • GCP</div>
+            <div class="stat-label">Cloud Platforms</div>
           </div>
         </div>
       </div>
-    </section>
-  </header>
+    </div>
+  </section>
 
   <main class="container">
+
+    <!-- RESUME IMAGES CAROUSEL -->
+    <section class="section" id="highlights">
+      <h2>Resume Highlights</h2>
+      <p class="lead">
+        Quick snapshot of work and skills. (These images scroll automatically.)
+      </p>
+
+      <!-- Upload images into repo: highlight-1.png, highlight-2.png ... -->
+      <div class="carousel card-3d" aria-label="Scrolling highlight images">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Duplicate set is appended in JS for infinite effect -->
+          <img src="highlight-1.png" alt="Highlight 1" />
+          <img src="highlight-2.png" alt="Highlight 2" />
+          <img src="highlight-3.png" alt="Highlight 3" />
+          <img src="highlight-4.png" alt="Highlight 4" />
+        </div>
+      </div>
+
+      <p class="muted small">
+        To add your images: upload them to GitHub repo root as <b>highlight-1.png</b>, <b>highlight-2.png</b>...
+        If your files are JPG, change .png to .jpg in the code above.
+      </p>
+    </section>
 
     <!-- ABOUT -->
     <section id="about" class="section">
       <h2>About</h2>
-      <p class="lead">
-        I’m a Data Engineer / ETL Developer focused on building scalable pipelines, improving data quality,
-        and enabling analytics with cloud data platforms.
-      </p>
-      <div class="card">
-        <ul class="bullets">
-          <li>Strong hands-on experience with Python, SQL, Spark, Airflow, and cloud-native data services.</li>
-          <li>Built data pipelines for ingestion, transformation, orchestration, and warehousing (batch + streaming).</li>
-          <li>Comfortable in Agile delivery, CI/CD, monitoring, and production support.</li>
-        </ul>
+
+      <div class="grid-2">
+        <div class="card-3d">
+          <p class="lead">
+            I build and support end-to-end data pipelines—ingestion, transformation, orchestration, and warehousing—
+            with an emphasis on reliability, monitoring, and performance.
+          </p>
+
+          <ul class="bullets">
+            <li><b>ETL/ELT ownership:</b> pipelines from source → staging → curated layers → analytics.</li>
+            <li><b>Production readiness:</b> logging, alerting, retries, SLA monitoring, incident response.</li>
+            <li><b>Performance tuning:</b> partitioning, caching, query optimization, cluster/job tuning.</li>
+            <li><b>Data quality:</b> validation rules, deduplication, schema checks, reconciliation.</li>
+            <li><b>Collaboration:</b> works closely with analysts, app teams, and stakeholders in Agile.</li>
+          </ul>
+        </div>
+
+        <div class="card-3d">
+          <h3 class="h3">What I’m best at</h3>
+          <div class="chips">
+            <span>Pipeline Design</span><span>Incremental Loads</span><span>CDC Concepts</span>
+            <span>Orchestration</span><span>Data Modeling</span><span>Cloud Warehousing</span>
+            <span>Streaming</span><span>Automation</span><span>Monitoring</span>
+          </div>
+
+          <div class="divider"></div>
+
+          <h3 class="h3">Current Role</h3>
+          <p class="muted">
+            <b>ETL Developer (Full-time) — Innova Solutions</b><br/>
+            Started <b>Sep 2</b> • building and supporting ETL workflows and operational pipelines.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -110,7 +169,7 @@
 
       <div class="timeline">
 
-        <article class="role card">
+        <article class="role card-3d">
           <header class="role-head">
             <div>
               <h3>ETL Developer (Full-time)</h3>
@@ -119,14 +178,14 @@
             <p class="dates">Sep 2025 – Present</p>
           </header>
           <ul class="bullets">
-            <li>Designing and supporting ETL workflows for reliable ingestion, transformation, and downstream reporting.</li>
-            <li>Building scalable data pipelines with strong focus on data quality, performance, and operational stability.</li>
-            <li>Partnering with cross-functional teams to deliver enhancements, handle incidents, and automate recurring jobs.</li>
+            <li>Build and support ETL workflows for ingestion, transformation, and downstream reporting.</li>
+            <li>Implement job scheduling, monitoring, error-handling, and operational runbooks.</li>
+            <li>Improve performance and stability through tuning, automation, and standardized patterns.</li>
+            <li>Partner with cross-functional teams to deliver enhancements and production support.</li>
           </ul>
-          <p class="stack"><strong>Stack:</strong> ETL/ELT, SQL, Python, Cloud, Scheduling/Orchestration (as applicable)</p>
         </article>
 
-        <article class="role card">
+        <article class="role card-3d">
           <header class="role-head">
             <div>
               <h3>Azure Data Engineer</h3>
@@ -135,14 +194,13 @@
             <p class="dates">Jul 2024 – Current</p>
           </header>
           <ul class="bullets">
-            <li>Designed and implemented warehouse solutions using Azure Synapse Analytics with dimensional modeling.</li>
-            <li>Built ETL pipelines using Python, Spark SQL, Azure Data Factory, Databricks; improved performance via tuning.</li>
-            <li>Enabled streaming workflows using Kafka + Spark Streaming and standardized reusable pipeline patterns.</li>
+            <li>Designed warehouse solutions using Azure Synapse with dimensional modeling for analytics.</li>
+            <li>Built pipelines using Python, Spark SQL, ADF, Databricks with tuning and reusable templates.</li>
+            <li>Enabled real-time ingestion workflows using Kafka + Spark Streaming with validation checks.</li>
           </ul>
-          <p class="stack"><strong>Stack:</strong> Azure Synapse, ADF, Databricks, Spark, Kafka, Airflow, Jenkins</p>
         </article>
 
-        <article class="role card">
+        <article class="role card-3d">
           <header class="role-head">
             <div>
               <h3>AWS Data Engineer</h3>
@@ -151,14 +209,13 @@
             <p class="dates">Sep 2022 – Jun 2024</p>
           </header>
           <ul class="bullets">
-            <li>Built and automated data integration workflows using Python/Scala and AWS services (EMR, S3, Lambda, etc.).</li>
-            <li>Designed real-time streaming pipelines with Kafka, Spark/Flink, and data lake integrations.</li>
-            <li>Worked with IaC and containerization to improve delivery and scalability.</li>
+            <li>Implemented data integration using Python/Scala and AWS services for batch and streaming pipelines.</li>
+            <li>Built and maintained streaming pipelines using Kafka, Spark/Flink, and data lake architecture.</li>
+            <li>Applied IaC + containerization for improved scalability and consistent deployments.</li>
           </ul>
-          <p class="stack"><strong>Stack:</strong> AWS (S3, EMR, Lambda), Kafka, Spark, Terraform, Docker, Snowflake</p>
         </article>
 
-        <article class="role card">
+        <article class="role card-3d">
           <header class="role-head">
             <div>
               <h3>GCP Data Engineer</h3>
@@ -167,14 +224,13 @@
             <p class="dates">Aug 2021 – Aug 2022</p>
           </header>
           <ul class="bullets">
-            <li>Integrated data from multiple sources into GCP platform; created data marts and reusable views in BigQuery.</li>
-            <li>Built batch processing with PySpark and orchestration with Airflow/Composer.</li>
+            <li>Created data marts and reusable views in BigQuery for reporting and analytics.</li>
+            <li>Built batch processing using PySpark with orchestration using Airflow/Composer.</li>
             <li>Worked with Dataproc, Pub/Sub, and Dataflow for batch + streaming use cases.</li>
           </ul>
-          <p class="stack"><strong>Stack:</strong> BigQuery, Dataflow, Pub/Sub, Dataproc, Airflow/Composer, PySpark</p>
         </article>
 
-        <article class="role card">
+        <article class="role card-3d">
           <header class="role-head">
             <div>
               <h3>Data Engineer</h3>
@@ -183,11 +239,10 @@
             <p class="dates">Sep 2019 – Jul 2021</p>
           </header>
           <ul class="bullets">
-            <li>Built ETL pipelines and orchestration logic; implemented monitoring/alerting and production support practices.</li>
-            <li>Developed streaming ingestion with Kafka + Spark Streaming with data quality checks.</li>
-            <li>Worked with SSIS, Snowflake, and cloud services for warehouse integrations and analytics enablement.</li>
+            <li>Built ETL pipelines with monitoring/alerting and production support workflows.</li>
+            <li>Developed streaming ingestion with Kafka + Spark Streaming with quality validations.</li>
+            <li>Worked on warehouse integrations using Snowflake/SSIS and cloud services.</li>
           </ul>
-          <p class="stack"><strong>Stack:</strong> Spark, Kafka, SSIS, Snowflake, Python, SQL, Kubernetes/Docker</p>
         </article>
 
       </div>
@@ -198,16 +253,24 @@
       <h2>Skills</h2>
 
       <div class="grid-2">
-        <div class="card">
-          <h3>Core</h3>
+        <div class="card-3d">
+          <h3 class="h3">Programming & Data</h3>
           <div class="chips">
-            <span>Python</span><span>SQL</span><span>Spark</span><span>Airflow</span><span>ETL/ELT</span>
-            <span>Data Modeling</span><span>CI/CD</span><span>Kafka</span>
+            <span>Python</span><span>SQL</span><span>PySpark</span><span>Spark SQL</span>
+            <span>ETL/ELT</span><span>Data Modeling</span><span>Data Quality</span>
           </div>
         </div>
 
-        <div class="card">
-          <h3>Cloud</h3>
+        <div class="card-3d">
+          <h3 class="h3">Orchestration & Streaming</h3>
+          <div class="chips">
+            <span>Airflow</span><span>ADF</span><span>Databricks Jobs</span>
+            <span>Kafka</span><span>Spark Streaming</span><span>Flink</span>
+          </div>
+        </div>
+
+        <div class="card-3d">
+          <h3 class="h3">Cloud</h3>
           <div class="chips">
             <span>Azure (ADF, Synapse, Databricks)</span>
             <span>AWS (S3, EMR, Glue, Lambda)</span>
@@ -215,18 +278,12 @@
           </div>
         </div>
 
-        <div class="card">
-          <h3>Warehousing & Databases</h3>
+        <div class="card-3d">
+          <h3 class="h3">Warehousing / DevOps</h3>
           <div class="chips">
-            <span>Snowflake</span><span>Redshift</span><span>Azure Synapse</span><span>BigQuery</span>
-            <span>PostgreSQL</span><span>MySQL</span><span>Oracle</span><span>MongoDB</span><span>Cassandra</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>DevOps / Tools</h3>
-          <div class="chips">
-            <span>Jenkins</span><span>GitHub</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span>
+            <span>Snowflake</span><span>Synapse</span><span>BigQuery</span><span>Redshift</span>
+            <span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>Terraform</span>
+            <span>GitHub</span>
           </div>
         </div>
       </div>
@@ -235,52 +292,48 @@
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <h2>Projects</h2>
-      <p class="lead">Add 2–4 strong projects that match the jobs you’re applying for.</p>
+      <p class="lead">Replace these with your real projects (I can rewrite them strongly if you paste details).</p>
 
       <div class="grid-2">
-        <article class="card">
-          <h3>Streaming Pipeline: Kafka → Spark → Warehouse</h3>
-          <p>
-            Real-time ingestion with Kafka topics, Spark Structured Streaming transformations, and curated outputs for analytics.
+        <article class="card-3d">
+          <h3 class="h3">Streaming Data Pipeline</h3>
+          <p class="muted">
+            Kafka → Spark Structured Streaming → curated warehouse tables for reporting and analytics.
           </p>
           <ul class="bullets compact">
-            <li>Schema validation + quality checks</li>
-            <li>Monitoring + alerting</li>
-            <li>Optimized partitioning & performance</li>
+            <li>Schema validation and data quality gates.</li>
+            <li>Late-arrival handling and deduplication patterns.</li>
+            <li>Monitoring dashboards and alerting.</li>
           </ul>
           <div class="links">
-            <a href="#" target="_blank" rel="noopener">GitHub</a>
-            <a href="#" target="_blank" rel="noopener">Design Notes</a>
+            <a class="link-3d" href="PASTE_PROJECT_GITHUB_URL" target="_blank" rel="noopener">GitHub</a>
+            <a class="link-3d" href="PASTE_PROJECT_DEMO_URL" target="_blank" rel="noopener">Demo</a>
           </div>
         </article>
 
-        <article class="card">
-          <h3>Batch ETL: ADF/Databricks → Synapse</h3>
-          <p>
-            Incremental loads with watermarking, deduplication, and standardized reusable patterns for faster delivery.
+        <article class="card-3d">
+          <h3 class="h3">Batch ETL Framework</h3>
+          <p class="muted">
+            Incremental loads with watermarking, retries, audit tables, and standardized templates.
           </p>
           <ul class="bullets compact">
-            <li>CDC + high watermark</li>
-            <li>Cost/perf tuning</li>
-            <li>CI/CD with Jenkins</li>
+            <li>High-watermark strategy + reconciliation.</li>
+            <li>Performance tuning and partition strategy.</li>
+            <li>CI/CD friendly job packaging.</li>
           </ul>
           <div class="links">
-            <a href="#" target="_blank" rel="noopener">GitHub</a>
-            <a href="#" target="_blank" rel="noopener">Demo</a>
+            <a class="link-3d" href="PASTE_PROJECT_GITHUB_URL" target="_blank" rel="noopener">GitHub</a>
+            <a class="link-3d" href="PASTE_PROJECT_DOC_URL" target="_blank" rel="noopener">Docs</a>
           </div>
         </article>
       </div>
-
-      <p class="muted">
-        Tip: Replace these placeholders with your real projects (even 2 strong projects is enough).
-      </p>
     </section>
 
     <!-- EDUCATION -->
     <section id="education" class="section">
       <h2>Education</h2>
-      <div class="card">
-        <h3>University of Maryland, Baltimore County (UMBC)</h3>
+      <div class="card-3d">
+        <h3 class="h3">University of Maryland, Baltimore County (UMBC)</h3>
         <p class="muted">Master’s in Data Science • Aug 2022 – May 2024</p>
       </div>
     </section>
@@ -288,7 +341,7 @@
     <!-- CONTACT -->
     <section id="contact" class="section">
       <h2>Contact</h2>
-      <div class="card">
+      <div class="card-3d">
         <p class="lead">Best way to reach me:</p>
         <div class="contact-grid">
           <div>
@@ -301,21 +354,41 @@
           </div>
           <div>
             <div class="contact-label">LinkedIn</div>
-            <a href="#" target="_blank" rel="noopener">Add your LinkedIn URL</a>
+            <a href="PASTE_LINKEDIN_URL_HERE" target="_blank" rel="noopener">Open Profile</a>
           </div>
           <div>
             <div class="contact-label">GitHub</div>
-            <a href="#" target="_blank" rel="noopener">Add your GitHub URL</a>
+            <a href="PASTE_GITHUB_URL_HERE" target="_blank" rel="noopener">Open Projects</a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER WITH ICONS -->
     <footer class="footer">
-      <p>© <span id="year"></span> Anji Naik Jeshavath • Built with GitHub Pages</p>
-      <a href="#top" class="to-top">Back to top ↑</a>
+      <div class="footer-left">
+        <p>© <span id="year"></span> Anji Naik Jeshavath</p>
+        <p class="muted small">Built with GitHub Pages</p>
+      </div>
+
+      <div class="social">
+        <!-- Paste your URLs in href -->
+        <a class="social-btn" href="PASTE_LINKEDIN_URL_HERE" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="icon-linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a class="social-btn" href="PASTE_GITHUB_URL_HERE" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="icon-github.svg" alt="GitHub" />
+        </a>
+        <a class="social-btn" href="PASTE_LEETCODE_URL_HERE" target="_blank" rel="noopener" aria-label="LeetCode">
+          <img src="icon-leetcode.svg" alt="LeetCode" />
+        </a>
+        <a class="social-btn" href="PASTE_HACKERRANK_URL_HERE" target="_blank" rel="noopener" aria-label="HackerRank">
+          <img src="icon-hackerrank.svg" alt="HackerRank" />
+        </a>
+      </div>
     </footer>
 
+    <a href="#top" class="to-top">Back to top ↑</a>
   </main>
 
   <script src="script.js"></script>
